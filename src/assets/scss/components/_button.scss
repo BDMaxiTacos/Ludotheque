@@ -1,0 +1,51 @@
+.btn {
+
+  &.jeu-availability{
+    height: fit-content;
+    align-self: flex-end;
+  }
+
+  padding: 12px $spacing_2;
+  border-radius: 12px;
+  border: none;
+  background: $secondary;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+
+  
+  &:hover {
+    background: $secondary_dark;
+  }
+  &:active {
+    background: $secondary_light;
+  }
+  &:disabled {
+    background-color: $disabledBackground;
+    color: grey;
+    cursor: default;
+  }
+}
+
+.btn-icon {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 2px;
+  border-radius: 15px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $borderPrimary;
+    border-radius: 15px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    &:hover {
+      background-color: unset;
+      cursor: default;
+    }
+  }
+}

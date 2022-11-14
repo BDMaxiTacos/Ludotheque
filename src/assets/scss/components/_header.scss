@@ -1,0 +1,16 @@
+.header {
+  border-bottom: 2px $borderPrimary solid;
+  background-color: $grey;
+  padding: $spacing_1;
+  display: flex;
+  justify-content: flex-end;
+  &__name {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: $spacing_1;
+    & > span {
+      margin-right: 10px;
+    }
+  }
+}

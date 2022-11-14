@@ -1,0 +1,27 @@
+.submenu {
+  border-right: 2px $borderPrimary solid;
+
+  &-item {
+    font-size: 18px;
+    padding: calc($spacing_1 / 2) $spacing_1;
+  }
+  & .router-link-active .submenu-item {
+    background-color: $grey;
+    font-weight: bold;
+    position: relative;
+    cursor: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 5px;
+      height: 100%;
+      background-color: $secondary;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

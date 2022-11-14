@@ -1,0 +1,15 @@
+.loan{
+    &-item{
+        &__view-icon{
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    }
+
+    &-td{
+        &__user{
+            display: flex;
+            align-items: center;
+        }
+    }
+}

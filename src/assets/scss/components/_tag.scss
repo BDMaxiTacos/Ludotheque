@@ -1,0 +1,28 @@
+@use "sass:math";
+
+.tag {
+  display: inline-block;
+  background-color: $secondary_dark;
+  padding: math.div($spacing_1, 2) $spacing_1;
+  border-radius: 35px;
+  font-size: 14px;
+  &.--green {
+    background-color: $green_tag;
+    color: $green_tag__text;
+  }
+
+  &.--orange {
+    background-color: $orange_tag;
+    color: $orange_tag__text;
+  }
+
+  &.--red {
+    background-color: $red_tag;
+    color: $red_tag__text;
+  }
+
+  &.--blue {
+    background-color: $blue_tag;
+    color: $blue_tag__text;
+  }
+}

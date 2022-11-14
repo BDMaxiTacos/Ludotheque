@@ -1,0 +1,3 @@
+export const EMPRUNT_STATUS_RETARD = "RETARD";
+export const EMPRUNT_STATUS_ENCOURS = "EN COURS";
+export const EMPRUNT_STATUS_TERMINE = "RENDU";

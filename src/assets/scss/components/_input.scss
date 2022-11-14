@@ -1,0 +1,36 @@
+@use "sass:math";
+.multiselect.is-active {
+  box-shadow: none;
+}
+.input {
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__field:required + &__label::after {
+    content: "*";
+    margin-left: 6px;
+    display: inline-block;
+  }
+
+  &.error &__label {
+    color: $alert;
+  }
+
+  &.error &__field {
+    border-color: $alert;
+  }
+
+  &__field {
+    background-color: $white;
+    border: 1px solid $borderPrimary;
+    border-radius: 5px;
+    width: 100%;
+    resize: none;
+    padding: calc(math.div($spacing_1, 2));
+  }
+  &__label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+}

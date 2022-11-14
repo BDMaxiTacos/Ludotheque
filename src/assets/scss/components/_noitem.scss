@@ -1,0 +1,11 @@
+.no-item__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.no-item__img {
+  width: clamp(200px, 15%, 300px);
+  margin-bottom: 24px;
+}

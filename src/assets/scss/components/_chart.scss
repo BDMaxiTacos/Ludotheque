@@ -1,0 +1,7 @@
+.chart {
+  @include card;
+
+  &__diagram {
+    height: 300px;
+  }
+}

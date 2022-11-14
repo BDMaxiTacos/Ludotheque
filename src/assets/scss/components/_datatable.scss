@@ -1,0 +1,19 @@
+.datatable {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+
+  &__clickable-row:hover {
+    background-color: $grey;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+
+  &__item {
+    padding: $spacing_1 0;
+  }
+
+  &__header {
+    border-bottom: 2px $borderPrimary solid;
+  }
+}

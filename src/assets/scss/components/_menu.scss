@@ -1,0 +1,53 @@
+.menu {
+  background: $gradient;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: fit-content;
+  height: 100vh;
+  user-select: none;
+
+  &-item {
+    transition: 0.3s background;
+    cursor: pointer;
+    padding: $spacing-1 $spacing-2;
+
+    &.-isOpen .menu-item__label {
+      display: none;
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+
+    &__label {
+      margin-left: $spacing-2;
+      display: inline-block;
+      color: white;
+    }
+
+    &__icon {
+      transition: 0.3s transform;
+      color: white;
+      &.-isOpen {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.router-link-active {
+  & .menu-item {
+    background: $secondary;
+  }
+
+  & .menu-item__label {
+    font-weight: bold;
+    color: $black;
+  }
+
+  & .menu-item__icon {
+    color: $black;
+  }
+}

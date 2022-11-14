@@ -1,0 +1,46 @@
+.app {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  &__main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    overflow: hidden auto;
+  }
+
+  &__container {
+    width: 100%;
+    padding: $spacing_4;
+
+    .main-router {
+      grid-column: span 12;
+    }
+
+    .submenu-router {
+      grid-column: span 2;
+    }
+
+    .submenu-router + .main-router {
+      grid-column: span 10;
+      padding-left: $spacing_3;
+    }
+  }
+}
+
+h1 {
+  margin-bottom: $spacing_2;
+}
+
+.page {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacing_2;
+
+    & > h1 {
+      margin-bottom: 0;
+    }
+  }
+}
